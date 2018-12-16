@@ -25,9 +25,9 @@ d3.csv('data/tableau.csv')
 
         datiTabella= tavoliData.map(function (d){
                 return {
-                    'numero invitati': +d.value['numero commensali'],
-                    'nomeTavolo':d.key,
-                    'elenco':d.value.elenco,
+                    // 'numero invitati': +d.value['numero commensali'],
+                    'tavolo':d.key,
+                    'invitati':d.value.elenco,
                     'lunghezzaElenco':+d.value.elenco.toString().length
                 }
         });
@@ -36,7 +36,7 @@ d3.csv('data/tableau.csv')
         nomiTavoli = tavoliData.map(d=>d.key);
         console.log('nomiTavoli',nomiTavoli);
 
-        var columns = ['numero invitati','nomeTavolo','elenco']; //TODO:prenderli dai dati
+        var columns = ['tavolo','invitati']; //TODO:prenderli dai dati
 
         // append the header row
         thead.append('tr')
@@ -65,16 +65,16 @@ d3.csv('data/tableau.csv')
             .text(function (d) { return d.value; })
         ;
 
-        d3.selectAll('td:nth-child(1)')
-            .classed('numeroTavolo',true)
-        ;
+        // d3.selectAll('td:nth-child(1)')
+        //     .classed('numeroTavolo',true)
+        // ;
 
-        d3.selectAll('td:nth-child(2)')
+        d3.selectAll('td:nth-child(1)')
             .classed('nomeTavolo',true)
         ;
         lunghezza_elenco=datiTabella.map(d => d.lunghezzaElenco);
-        d3.selectAll('td:nth-child(3)')
-            .attr('class' , 'nomiTavolo')
+        d3.selectAll('td:nth-child(2)')
+            .attr('class' , 'elenco')
             // .classed('marquee',true)
             .classed('marquee',  true)
             // https://www.jonathan-petitcolas.com/2013/05/06/simulate-marquee-tag-in-css-and-javascript.html
