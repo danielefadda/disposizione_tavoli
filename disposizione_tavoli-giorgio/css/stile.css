@@ -8,10 +8,10 @@
 }
 
 body {
-	font-size: 48px;
-	line-height: 72px;
+	font-size: 36px;
+	line-height: 48px;
 	background-color: black;
-	padding: 36px;
+	padding: 24px;
 }
 
 h1 {
@@ -45,8 +45,8 @@ h1 {
 	overflow: hidden;
 	white-space: nowrap;
 	background: #111111;
-	border: 10px solid #000000;
-	padding: 10px 30px;
+	border: 6px solid #000000;
+	padding: 6px 20px;
 }
 
 span.testo {
