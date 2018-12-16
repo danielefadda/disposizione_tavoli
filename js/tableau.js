@@ -62,6 +62,10 @@ d3.csv('data/tableau.csv')
             })
             .enter()
             .append('td')
+            .append('div')
+            // .attr('width', function (d,i) {
+            //     return d.value.map(d => d.length ).reduce((a, b) => a + b, 0)*13;
+            // })
             .text(function (d) { return d.value; })
         ;
 
@@ -72,15 +76,27 @@ d3.csv('data/tableau.csv')
         d3.selectAll('td:nth-child(1)')
             .classed('nomeTavolo',true)
         ;
-        lunghezza_elenco=datiTabella.map(d => d.lunghezzaElenco);
+        lunghezza_elenco=datiTabella.map(d => d.lunghezzaElenco*17);
+
         d3.selectAll('td:nth-child(2)')
             .attr('class' , 'elenco')
-            // .classed('marquee',true)
-            .classed('marquee',  true)
+            .classed('marquee', function (d,i) {
+                return lunghezza_elenco[i] > 450;
+            })
+            .selectAll('div')
+            .attr('class' , 'testo')
+            .attr('width', function (d,i) {
+                return d.value.map(d => d.length ).reduce((a, b) => a + b, 0)*13;
+            })
+
+        ;
+
+
+
             // https://www.jonathan-petitcolas.com/2013/05/06/simulate-marquee-tag-in-css-and-javascript.html
         ;
 
-        console.log(lunghezza_elenco)
+        console.log('lunghezza_elenco',lunghezza_elenco);
         return table;
     });
 
