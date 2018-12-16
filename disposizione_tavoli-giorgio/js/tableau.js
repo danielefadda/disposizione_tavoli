@@ -25,10 +25,11 @@ d3.csv('data/tableau.csv')
         nomiTavoli = tavoliData.map(d => d.key);
         console.log('nomiTavoli', nomiTavoli);
 
-        datiTabella = tavoliData.map(function (d) {
+        datiTabella = tavoliData.map(function (d, i) {
             return {
                 'numero invitati': +d.value['numero commensali'],
-                'Tavolo': d.key,
+                'N.': i,
+                'Tavolo': d.key.toUpperCase(),
                 'Commensali': d.value.elenco.join(', ').toUpperCase(),
                 'lunghezzaElenco': +d.value.elenco.toString().length
             }
@@ -38,7 +39,7 @@ d3.csv('data/tableau.csv')
         nomiTavoli = tavoliData.map(d => d.key);
         console.log('nomiTavoli', nomiTavoli);
 
-        var columns = ['Tavolo', 'Commensali']; //TODO:prenderli dai dati
+        var columns = ['N.', 'Tavolo', 'Commensali']; //TODO:prenderli dai dati
 
         // append the header row
         thead.append('div')
@@ -77,11 +78,15 @@ d3.csv('data/tableau.csv')
             });
 
         d3.selectAll('div.col:nth-child(1)')
+            .classed('col-1', true)
+            .classed('num-tavolo', true);
+
+        d3.selectAll('div.col:nth-child(2)')
             .classed('col-3', true)
             .classed('nomi-tavolo', true);
 
-        d3.selectAll('div.col:nth-child(2)')
-            .classed('col-9', true)
+        d3.selectAll('div.col:nth-child(3)')
+            .classed('col-8', true)
             .classed('invitati', true);
         //animate the string
         d3.selectAll('div.tbody div.col:nth-child(1n)>span')

@@ -11,6 +11,7 @@ body {
 	font-size: 48px;
 	line-height: 72px;
 	background-color: black;
+	padding: 36px;
 }
 
 h1 {
@@ -34,19 +35,17 @@ h1 {
 
 }
 
-.nomi-tavolo {
-	overflow: hidden;
-	white-space: nowrap;
-	background: #222222;
-	border: 4px solid #000000;
-	padding: 10px 30px;
+.num-tavolo {
+	text-align: right;
 }
 
+.num-tavolo,
+.nomi-tavolo,
 .invitati {
 	overflow: hidden;
 	white-space: nowrap;
-	background: #222222;
-	border: 4px solid #000000;
+	background: #111111;
+	border: 10px solid #000000;
 	padding: 10px 30px;
 }
 
