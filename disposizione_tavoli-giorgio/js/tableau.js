@@ -28,7 +28,7 @@ d3.csv('data/tableau.csv')
         datiTabella = tavoliData.map(function (d, i) {
             return {
                 'numero invitati': +d.value['numero commensali'],
-                'N.': i,
+                'N.': i + 1,
                 'Tavolo': d.key.toUpperCase(),
                 'Commensali': d.value.elenco.join(', ').toUpperCase(),
                 'lunghezzaElenco': +d.value.elenco.toString().length
