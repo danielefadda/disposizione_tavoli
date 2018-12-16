@@ -80,21 +80,16 @@ d3.csv('data/tableau.csv')
             .classed('col-3', true)
             .classed('nomi-tavolo', true);
 
-        lunghezza_elenco = datiTabella.map(d => d.lunghezzaElenco);
         d3.selectAll('div.col:nth-child(2)')
             .classed('col-9', true)
             .classed('invitati', true);
         //animate the string
-        var stile = document.styleSheets[1];
-
         d3.selectAll('div.tbody div.col:nth-child(1n)>span')
             .each(function (d, i) {
                 if (getInnerWidth(d3.select(this).node()) > getInnerWidth(d3.select(this.parentNode).node())) {
                     marquee(d3.select(this).node(), d3.select(this).node().innerText);
                 }
             });
-        console.log(document.styleSheets[1].cssRules);
-        console.log(lunghezza_elenco);
         return table;
     });
 
@@ -103,11 +98,6 @@ getInnerWidth = function (elem) {
     return elem.offsetWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight) - parseFloat(style.borderLeftWidth) - parseFloat(style.borderRightWidth);
 };
 
-
-
-var myVar = setInterval(marquee, 500);
-
-var str = "My Javascript marquee";
 
 function marquee(htmlEl, text) {
     text += '          ';
