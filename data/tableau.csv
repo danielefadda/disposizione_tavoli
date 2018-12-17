@@ -1,6 +1,6 @@
 nome tavolo,num,invitato
-sposi,1,Chiara
-sposi,1,Daniele
+sposi,1,Chiara Ruggieri
+sposi,1,Daniele Fadda
 pippo,2,Roberto Ruggieri
 pippo,2,Giovanna de Giovanni
 pippo,2,Stefano Ruggieri
@@ -10,7 +10,7 @@ pluto,3,Lita Sabini
 pluto,3,Pino Palese
 pluto,3,Mino Palese
 pluto,3,Palmira Aceto
-pluto,3,Giovanna Cappello
+pluto,3,Giovanna Cappello 
 pluto,3,Carmen Cappello
 pluto,3,Girolamo Aceto
 pluto,3,Giuseppe Aceto
@@ -79,7 +79,7 @@ indiana pipps,9,Michela Natilli
 Paperone,10,Paolo Cintia
 Paperone,10,Luca Pappalardo
 Paperone,10,Salvo rinzivillo
-Paperone,10,Anna Monreale
+Paperone,10,Anna Monreale 
 Paperone,10,Vittorio romano
 Paperone,10,Giulio rossetti
 Paperone,10,Mirco nanni
@@ -92,7 +92,7 @@ Minnie,11,Camilla guidotti
 Minnie,11,Alessio rossi
 Minnie,11,Ioanna Miliou
 Minnie,11,Francesca Pratesi
-Minnie,11,Letizia Milli
+Minnie,11,Letizia Milli 
 Minnie,11,Natasha Trielli
 Minnie,11,Viola Bachini
 Minnie,11,Francesco Stoppaccioli
