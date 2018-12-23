@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'advanced-led-board-7';
+	src: url('../fonts/advanced-led-board-7.ttf');
+}
+
+* {
+	font-family: 'advanced-led-board-7';
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 0) {
+	html {
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 576px) {
+	html {
+		font-size: 15px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	html {
+		font-size: 25px;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	html {
+		font-size: 30px;
+	}
+}
+
+
+body {
+	font-size: 1rem;
+	padding: 1rem;
+	color: gold;
+	background-color: black;
+}
+
+* {
+	line-height: 1em;
+}
+
+.thead {
+	color: white;
+	text-shadow: 0 0 .5rem white;
+}
+
+.tbody,
+#footer {
+	color: gold;
+	text-shadow: 0 0 .5rem gold;
+}
+
+.num-tavolo {
+	text-align: right;
+}
+
+.num-tavolo,
+.nomi-tavolo,
+.invitati,
+.data,
+.ora {
+	overflow: hidden;
+	white-space: nowrap;
+	background: #111111;
+	border: .2rem solid #000000;
+	padding: .4rem .5rem .2rem .5rem;
+}
+
+.info {
+	padding: 0;
+}
+
+.info .rigo {
+	overflow: hidden;
+	white-space: nowrap;
+	background: #111111;
+	border: .2rem solid #000000;
+	padding: .4rem .5rem .2rem .5rem;
+}
+
+span.testo {
+	display: inline-block;
+	white-space: pre;
+}
+
+
+@keyframes marquee {
+	0% {
+		transform: translate(calc(0%), 0);
+	}
+
+	100% {
+		transform: translate(-100%, 0);
+	}
+}
+
+
+/* FOOTER */
+
+div#footer {
+	margin-top: 1rem;
+}
+
+div.data {
+	font-size: 1rem;
+	text-align: center;
+}
+
+div.ora {
+	font-size: 3rem;
+	text-align: center;
+}

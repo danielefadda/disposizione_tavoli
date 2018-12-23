@@ -1,6 +1,6 @@
 @font-face {
-	font-family: Danger;
-	src: url('Danger-on-the-Motorway.otf');
+	font-family: 'Danger';
+	src: url('../fonts/Danger-on-the-Motorway.otf');
 }
 
 * {
