@@ -1,8 +1,8 @@
-console.log('ready');
-d3.csv('data/tableau.csv')
-	.then(function (data) {
-		console.log('rows', data);
+var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1Rc0OMUw45znURdQMVxlvkI7QJTJLZ1j9FTsltu7s8_A/edit?usp=sharing';
 
+// d3.csv('data/tableau.csv')
+function drawChart(data) {
+	console.log('data dentro chart',data);
 
 		var table = d3.select('#tabellone').append('div')
 			.attr('class', 'container-fluid');
@@ -105,7 +105,26 @@ d3.csv('data/tableau.csv')
 				}
 			});
 		return table;
-	});
+	};
+
+
+//Qui inizia lo script di tabletop
+// var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1DbgtNoqzgEZwz1gobswzhCVh_KcJ29XFuDN_0BHdNpA/pubhtml'; //inserire qui il link al file di Google Sheet
+
+function renderSpreadsheetData() {
+    Tabletop.init( { key: public_spreadsheet_url,
+        callback: draw,
+        simpleSheet: true } )
+}
+
+function draw(data, tabletop) {
+    // draw chart
+    drawChart(data);
+}
+
+renderSpreadsheetData();
+//Qui finisce il codice di tabletop
+
 
 getInnerWidth = function (elem) {
 	var style = window.getComputedStyle(elem);

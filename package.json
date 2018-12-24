@@ -1,0 +1,25 @@
+{
+  "name": "disposizione_tavoli",
+  "version": "1.2.0",
+  "description": "Tableau in stile tabellone delle partenze",
+  "main": "tableau.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielefadda/disposizione_tavoli.git"
+  },
+  "keywords": [
+    "tableau"
+  ],
+  "author": "danielefadda, epimelesi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielefadda/disposizione_tavoli/issues"
+  },
+  "homepage": "https://github.com/danielefadda/disposizione_tavoli#readme",
+  "dependencies": {
+    "tabletop": "^1.5.2"
+  }
+}
