@@ -95,20 +95,14 @@ body {
 	padding: .4rem .5rem .2rem .5rem;
 }
 
-span.testo {
-	display: inline-block;
-	white-space: pre;
+div.casella {
+	display: flex;
+	position: relative;
 }
 
-
-@keyframes marquee {
-	0% {
-		transform: translate(calc(0%), 0);
-	}
-
-	100% {
-		transform: translate(-100%, 0);
-	}
+span.testo {
+	margin-right: 1rem;
+	padding-right: 5rem;
 }
 
 
