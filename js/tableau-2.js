@@ -142,7 +142,7 @@ function marquee(htmlEl, index, speed) {
 	// Time = Distance/Speed
 	var spanLength = htmlEl.offsetWidth;
 	var timeTaken = spanLength / speed;
-	addCSSRule(document.styleSheets[1], '@keyframes marquee-' + index, '0% {left: 0;}100% {left: calc(' + -spanLength + 'px - 1rem)}');
+	addCSSRule(document.styleSheets[2], '@keyframes marquee-' + index, '0% {left: 0;}100% {left: calc(' + -spanLength + 'px - 1rem)}');
 	htmlEl.parentNode.style.animationName = 'marquee-' + index;
 	htmlEl.parentNode.style.animationTimingFunction = 'linear';
 	htmlEl.parentNode.style.animationIterationCount = 'infinite';
@@ -172,6 +172,7 @@ setInterval(visualizzaData, 1000);
 
 
 function addCSSRule(sheet, selector, rules, index) {
+	console.log(sheet);
 	if ('insertRule' in sheet) {
 		sheet.insertRule(selector + '{' + rules + '}', index);
 	} else if ('addRule' in sheet) {
