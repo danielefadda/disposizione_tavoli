@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/danielefadda/disposizione_tavoli#readme",
   "dependencies": {
+    "bootstrap": "^4.2.1",
+    "d3": "^5.7.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.14.6",
     "tabletop": "^1.5.2"
   }
 }
