@@ -101,7 +101,7 @@ function drawChart(data) {
 				//marquee(d3.select(this).node(), d3.select(this).node().innerText);
 				var dupNode = d3.select(this).node().cloneNode(true);
 				d3.select(this).node().parentNode.appendChild(dupNode);
-				marquee(d3.select(this).node(), i, 100);
+				marquee(d3.select(this).node(), i, 60);
 			} else {
 				//non scorrere
 			}

@@ -40,7 +40,8 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 	html {
-		font-size: 30px;
+		font-size: 28px;
+		overflow:hidden;
 	}
 }
 
