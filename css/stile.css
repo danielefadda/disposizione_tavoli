@@ -41,7 +41,7 @@
 @media (min-width: 1200px) {
 	html {
 		font-size: 28px;
-		overflow:hidden;
+		/*overflow:hidden;*/
 	}
 }
 

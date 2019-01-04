@@ -29,8 +29,8 @@ function drawChart(data) {
 		return {
 			'numero invitati': +d.value['numero commensali'],
 			'N.': i + 1,
-			'Tavolo': d.key.toUpperCase().trim(),
-			'Commensali': d.value.elenco.map(el => el.trim()).join(' · ').toUpperCase(),
+			'Destinazione': d.key.toUpperCase().trim(),
+			'Passeggeri': d.value.elenco.map(el => el.trim()).join(' · ').toUpperCase(),
 			'lunghezzaElenco': +d.value.elenco.toString().length
 		}
 	});
@@ -39,7 +39,7 @@ function drawChart(data) {
 	nomiTavoli = tavoliData.map(d => d.key);
 	console.log('nomiTavoli', nomiTavoli);
 
-	var columns = ['N.', 'Tavolo', 'Commensali']; //TODO:prenderli dai dati
+	var columns = ['N.', 'Destinazione', 'Passeggeri']; //TODO:prenderli dai dati
 
 	// append the header row
 	thead.append('div')
