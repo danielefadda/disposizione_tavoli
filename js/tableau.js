@@ -88,11 +88,11 @@ function drawChart(data) {
 		.classed('num-tavolo', true);
 
 	d3.selectAll('div#tabellone div.col:nth-child(2)')
-		.classed('col-3', true)
+		.classed('col-2', true)
 		.classed('nomi-tavolo', true);
 
 	d3.selectAll('div#tabellone div.col:nth-child(3)')
-		.classed('col-8', true)
+		.classed('col-9', true)
 		.classed('invitati', true);
 	//animate the string
 	d3.selectAll('div.casella:nth-child(1n)>span')
