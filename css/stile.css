@@ -40,7 +40,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 	html {
-		font-size: 28px;
+		font-size: 25px;
 		/*overflow:hidden;*/
 	}
 }
@@ -120,5 +120,5 @@ div.data {
 
 div.ora {
 	font-size: 3rem;
-	text-align: center;
+	text-align: left;
 }
